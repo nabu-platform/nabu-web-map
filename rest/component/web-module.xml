@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<webModule>
+    <webFragments>nabu.web.map.rest.index.get</webFragments>
+    <webFragments>nabu.web.map.rest.entry.list</webFragments>
+    <audience>CUSTOMER</audience>
+</webModule>

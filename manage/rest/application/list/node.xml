@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<node artifactManager="be.nabu.eai.module.rest.provider.RESTServiceManager" created="2022-11-25T13:05:11.541+01:00" lastModified="2023-09-30T08:32:18.305+02:00" leaf="true" version="18">
+    <environmentId>apollo</environmentId>
+    <hidden>false</hidden>
+    <locked>false</locked>
+    <properties/>
+    <references>nabu.web.map.manage.rest.application.applicationList</references>
+    <references>nabu.utils.reflection.Node.dependencies</references>
+</node>

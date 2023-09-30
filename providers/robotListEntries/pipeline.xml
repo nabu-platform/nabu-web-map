@@ -1,0 +1,8 @@
+<structure interface="nabu.web.robots.specs.listEntries" name="pipeline">
+    <structure name="input"/>
+    <structure name="output"/>
+    <structure collectionName="sitemapApplications" definition="nabu.web.map.crud.sitemapApplication.types.output" maxOccurs="unbounded" minOccurs="0" name="sitemaps"/>
+    <field name="name" type="java.lang.String"/>
+    <structure definition="nabu.web.application.types.WebApplicationInformation" minOccurs="0" name="information"/>
+    <structure definition="nabu.web.application.types.WebFragmentInformation" minOccurs="0" name="fragment"/>
+</structure>

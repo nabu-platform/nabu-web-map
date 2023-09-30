@@ -1,0 +1,6 @@
+<structure interface="nabu.web.map.rest.entry.list:api" name="pipeline">
+    <structure name="input"/>
+    <structure name="output"/>
+    <structure collectionName="sitemapApplications" definition="nabu.web.map.crud.sitemapApplication.types.output" minOccurs="0" name="application"/>
+    <structure collectionName="sitemapEntries" definition="nabu.web.map.crud.sitemapEntry.types.output" maxOccurs="unbounded" minOccurs="0" name="entries"/>
+</structure>

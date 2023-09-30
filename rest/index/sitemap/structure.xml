@@ -1,0 +1,4 @@
+<structure name="map">
+    <field name="loc" type="java.net.URI"/>
+    <field minOccurs="0" name="lastmod" timezone="UTC" type="java.util.Date"/>
+</structure>

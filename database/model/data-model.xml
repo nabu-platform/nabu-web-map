@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<dataModel>
+    <entries>
+        <synchronize>true</synchronize>
+        <type>nabu.web.map.database.types.sitemapApplication</type>
+        <x>244</x>
+        <y>105</y>
+    </entries>
+    <entries>
+        <synchronize>true</synchronize>
+        <type>nabu.web.map.database.types.sitemapGenerator</type>
+        <x>755</x>
+        <y>116</y>
+    </entries>
+    <entries>
+        <synchronize>true</synchronize>
+        <type>nabu.web.map.database.types.sitemapEntry</type>
+        <x>1243</x>
+        <y>352</y>
+    </entries>
+</dataModel>

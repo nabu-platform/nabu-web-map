@@ -1,0 +1,6 @@
+<structure name="url">
+    <field name="loc" type="java.net.URI"/>
+    <field minOccurs="0" name="lastmod" type="java.util.Date"/>
+    <field minOccurs="0" name="changefreq" type="java.lang.String"/>
+    <field minOccurs="0" name="priority" type="java.lang.Double"/>
+</structure>

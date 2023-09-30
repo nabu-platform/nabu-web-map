@@ -1,0 +1,3 @@
+<structure name="applicationList">
+    <structure definition="nabu.web.map.manage.rest.application.application" maxOccurs="unbounded" minOccurs="0" name="applications"/>
+</structure>

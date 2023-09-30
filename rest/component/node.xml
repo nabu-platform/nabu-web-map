@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<node artifactManager="be.nabu.eai.module.web.component.WebComponentManager" created="2023-09-29T09:49:15.692+02:00" lastModified="2023-09-29T09:59:48.599+02:00" leaf="true" version="4">
+    <environmentId>apollo</environmentId>
+    <hidden>false</hidden>
+    <locked>false</locked>
+    <properties/>
+    <references>nabu.web.map.rest.index.get</references>
+    <references>nabu.web.map.rest.entry.list</references>
+    <tags>Sitemap</tags>
+</node>

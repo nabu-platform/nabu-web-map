@@ -1,0 +1,4 @@
+<structure name="path">
+    <field name="name" type="java.lang.String"/>
+    <field name="page" type="java.lang.Long"/>
+</structure>
