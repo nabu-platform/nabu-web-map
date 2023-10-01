@@ -1,0 +1,8 @@
+<structure name="pipeline">
+    <structure name="input">
+        <field name="url" type="java.net.URI"/>
+    </structure>
+    <structure name="output">
+        <field name="rendered" type="java.lang.String"/>
+    </structure>
+</structure>
