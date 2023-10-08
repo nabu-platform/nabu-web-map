@@ -1,10 +1,13 @@
-<structure collectionName="sitemapEntries" name="sitemapEntry" superType="nabu.web.map.specs.entry">
+<structure collectionName="sitemapEntries" name="sitemapEntry">
     <field name="id" pattern="[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}|[0-9a-fA-F]{32}" primaryKey="true" type="java.util.UUID"/>
+    <field comment="Used for consistent sorting" name="created" timezone="UTC" type="java.util.Date"/>
+    <field comment="When we regenerate, we check if it was actually modified." minOccurs="0" name="modified" timezone="UTC" type="java.util.Date"/>
     <field foreignKey="nabu.web.map.database.types.sitemapGenerator:id" minOccurs="0" name="sitemapGeneratorId" pattern="[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}|[0-9a-fA-F]{32}" type="java.util.UUID"/>
     <field foreignKey="nabu.web.map.database.types.sitemapApplication:id" name="sitemapApplicationId" pattern="[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}|[0-9a-fA-F]{32}" type="java.util.UUID"/>
     <field minOccurs="0" name="content" type="java.lang.String"/>
-    <field comment="Used for consistent sorting" name="created" timezone="UTC" type="java.util.Date"/>
-    <field comment="When we regenerate, we check if it was actually modified." minOccurs="0" name="modified" timezone="UTC" type="java.util.Date"/>
     <field minOccurs="0" name="generated" timezone="UTC" type="java.util.Date"/>
     <field comment="An external id used to reference this entry. Eg. when it comes from a blog " minOccurs="0" name="externalId" pattern="[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}|[0-9a-fA-F]{32}" type="java.util.UUID"/>
+    <field comment="The uri that was resolved" name="uri" type="java.net.URI"/>
+    <field comment="Defaults to &quot;never&quot;, other options are &quot;always&quot;, &quot;hourly&quot;, &quot;daily&quot;, &quot;weekly&quot;, &quot;monthly&quot;, &quot;yearly&quot;" minOccurs="0" name="changeFrequency" type="java.lang.String"/>
+    <field minOccurs="0" name="priority" type="java.lang.Double"/>
 </structure>

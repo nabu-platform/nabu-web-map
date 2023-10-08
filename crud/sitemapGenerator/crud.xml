@@ -16,6 +16,10 @@
         <input>true</input>
         <vary>false</vary>
     </filters>
+    <foreignFields>
+        <foreignName>sitemapApplicationId:webApplicationId</foreignName>
+        <localName>webApplicationId</localName>
+    </foreignFields>
     <getPermission>application.edit</getPermission>
     <hooks>false</hooks>
     <listPermission>application.edit</listPermission>

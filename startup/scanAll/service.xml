@@ -1,0 +1,130 @@
+<sequence xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		disabled="false"
+		id="84873ea396644c47b2cebaa93ec48793"
+		lineNumber="1">
+	<steps xsi:type="be.nabu.libs.services.vm.step.For"
+			disabled="false"
+			id="ec26b4f70dcc4320b519f42f766cc677"
+			lineNumber="2">
+		<steps xsi:type="be.nabu.libs.services.vm.step.Sequence"
+				disabled="false"
+				id="5a9f971f630a43bd98d8dbaa484a0a3e"
+				lineNumber="3"
+				scopeDefaultTransaction="true">
+			<steps xsi:type="be.nabu.libs.services.vm.step.Map"
+					disabled="false"
+					id="e95c6c7b175849088369c62c8bd0cced"
+					lineNumber="4">
+				<steps xsi:type="be.nabu.libs.services.vm.step.Invoke"
+						disabled="false"
+						id="0aab14f1387f48c5b71b9c3c07f5a721"
+						serviceId="nabu.utils.reflection.Node.dependencies"
+						resultName="resultf515bed855fa40dd8897274b0e25a6d2"
+						temporaryMapping="true"
+						x="113"
+						y="94"
+						invocationOrder="0"
+						asynchronous="false"
+						recache="false">
+					<steps xsi:type="be.nabu.libs.services.vm.step.Link"
+							disabled="false"
+							id="807f857233fa403393a5e732a2b64b36"
+							mask="false"
+							optional="false"
+							fixedValue="true">
+						<from>nabu.web.map.database.model</from>
+						<to>id</to>
+					</steps>
+				</steps>
+				<steps xsi:type="be.nabu.libs.services.vm.step.Link"
+						disabled="false"
+						id="cbb0eb66cd6c4385b12af4d1bab1eac2"
+						mask="false"
+						optional="false"
+						fixedValue="false">
+					<from>resultf515bed855fa40dd8897274b0e25a6d2/nodes[artifactClass == "be.nabu.eai.module.jdbc.pool.JDBCPoolArtifact"]/id</from>
+					<to>connectionIds</to>
+				</steps>
+			</steps>
+			<steps xsi:type="be.nabu.libs.services.vm.step.For"
+					disabled="false"
+					id="eef96eb40dbc4e0497ec360155b977d1"
+					lineNumber="5"
+					variable="connectionId">
+				<steps xsi:type="be.nabu.libs.services.vm.step.Map"
+						disabled="false"
+						id="4be01dbe6baf4afb847758eabc06d517"
+						lineNumber="6">
+					<steps xsi:type="be.nabu.libs.services.vm.step.Invoke"
+							disabled="false"
+							id="9cd3b9ec33244e5a932419fe03dbe4a7"
+							serviceId="nabu.web.map.services.entry.scanAll"
+							resultName="resultc15b574531b041dab884f254e3a53a8d"
+							temporaryMapping="true"
+							x="163"
+							y="112"
+							invocationOrder="0"
+							asynchronous="false"
+							recache="false">
+						<steps xsi:type="be.nabu.libs.services.vm.step.Link"
+								disabled="false"
+								id="a0bf036217c747dc9f895bf942ea9066"
+								mask="false"
+								optional="false"
+								fixedValue="false">
+							<from>connectionId</from>
+							<to>connectionId</to>
+						</steps>
+					</steps>
+				</steps>
+				<query>connectionIds</query>
+			</steps>
+		</steps>
+		<steps xsi:type="be.nabu.libs.services.vm.step.Sequence"
+				disabled="false"
+				id="124142eb84294276809e5a53c4c5258b"
+				lineNumber="7">
+			<steps xsi:type="be.nabu.libs.services.vm.step.Map"
+					disabled="false"
+					id="42fbb372dc0a42688c0cdb5891831c05"
+					lineNumber="8">
+				<steps xsi:type="be.nabu.libs.services.vm.step.Invoke"
+						disabled="false"
+						id="88da239d8e614760aa30c8fc7a667588"
+						serviceId="nabu.utils.Server.sleep"
+						resultName="result373d9dedd1c14765a738979e9bfec23a"
+						temporaryMapping="true"
+						x="71"
+						y="80"
+						invocationOrder="0"
+						asynchronous="false"
+						recache="false">
+					<steps xsi:type="be.nabu.libs.services.vm.step.Link"
+							disabled="false"
+							id="a97b1b5439ba425f9252aa83adcd402b"
+							mask="false"
+							optional="false"
+							fixedValue="true">
+						<from>1</from>
+						<to>amount</to>
+					</steps>
+					<steps xsi:type="be.nabu.libs.services.vm.step.Link"
+							disabled="false"
+							id="cf770ed1b1d746c882a3cca0fd7178c0"
+							mask="false"
+							optional="false"
+							fixedValue="true">
+						<from>HOURS</from>
+						<to>unit</to>
+					</steps>
+				</steps>
+			</steps>
+			<steps xsi:type="be.nabu.libs.services.vm.step.Catch"
+					disabled="false"
+					id="7611cdd860e34e1cae3a88bbfa2c5eb9"
+					lineNumber="9">
+			</steps>
+		</steps>
+		<query>true</query>
+	</steps>
+</sequence>

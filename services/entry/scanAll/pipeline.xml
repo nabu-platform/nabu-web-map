@@ -1,4 +1,17 @@
 <structure name="pipeline">
-    <structure name="input"/>
+    <structure name="input">
+        <field minOccurs="0" name="connectionId" type="java.lang.String"/>
+    </structure>
     <structure name="output"/>
+    <structure collectionName="sitemapGenerators" definition="nabu.web.map.crud.sitemapGenerator.types.output" maxOccurs="unbounded" minOccurs="0" name="generators"/>
+    <structure definition="nabu.web.map.specs.entry" maxOccurs="unbounded" minOccurs="0" name="entries"/>
+    <field minOccurs="0" name="propertiesType" type="java.lang.String"/>
+    <structure definition="nabu.web.map.services.entry.propertyList" name="propertyList"/>
+    <structure definition="java.lang.Object" minOccurs="0" name="properties"/>
+    <structure collectionName="sitemapEntries" definition="nabu.web.map.crud.sitemapEntry.types.output" maxOccurs="unbounded" minOccurs="0" name="existingEntries"/>
+    <structure collectionName="sitemapEntries" definition="nabu.web.map.crud.sitemapEntry.types.output" minOccurs="0" name="existingEntry"/>
+    <field minOccurs="0" name="date" type="java.util.Date"/>
+    <structure collectionName="sitemapEntries" definition="nabu.web.map.crud.sitemapEntry.types.output" maxOccurs="unbounded" minOccurs="0" name="entriesToDelete"/>
+    <structure collectionName="sitemapEntries" definition="nabu.web.map.crud.sitemapEntry.types.output" maxOccurs="unbounded" minOccurs="0" name="entriesToUpdate"/>
+    <field comment="The uri that was resolved" maxOccurs="unbounded" minOccurs="0" name="uris" type="java.net.URI"/>
 </structure>

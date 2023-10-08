@@ -1,0 +1,56 @@
+isBot = lambda
+	userAgent ?= request.userAgent()
+
+	botRegexes = series()
+	# ------------------------- GOOGLE -----------------------------
+	# use https://www.google.com/webmasters/tools/googlebot-fetch?pli=1 to debug
+	# google (multiple search bots)
+	botRegexes = merge(botRegexes, "(?i).*Googlebot.*")
+	
+	# google ads
+	botRegexes = merge(botRegexes, 
+		"(?i).*AdsBot.*",
+		"(?i).*Mediapartners-Google.*",
+		"(?i).*developers.google.com.*")
+	
+	# -------------------------- MICROSOFT ------------------------
+	# https://www.bing.com/toolbox/webmaster/
+	botRegexes = merge(botRegexes, "(?i).*Bingbot.*")
+			
+	# -------------------------- LINKEDIN -------------------------
+	botRegexes = merge(botRegexes, "(?i).*LinkedInBot.*")
+			
+	# -------------------------- TWITTER -------------------------
+	botRegexes = merge(botRegexes, "(?i).*TwitterBot.*")
+			
+	# -------------------------- PINTEREST -------------------------
+	botRegexes = merge(botRegexes, "(?i).*Pinterestbot.*")
+			
+	# -------------------------- YAHOO ----------------------------
+	botRegexes = merge(botRegexes, "(?i).*Slurp.*")
+			
+	# -------------------------- OTHER ----------------------------
+	botRegexes = merge(botRegexes, 
+		"(?i).*DuckDuckBot.*",
+		"(?i).*Baiduspider.*",
+		"(?i).*YandexBot.*",
+		"(?i).*Sogou.*",
+		"(?i).*Exabot.*",
+		"(?i).*facebook.com.*",
+		"(?i).*crawler@alexa.com.*")
+			
+	# catch all
+	botRegexes = merge(botRegexes, "(?i).*(bot|googlebot|crawler|spider|robot|crawling).*")
+			
+	@return
+	isBot = false
+	for (botRegex : botRegexes)
+		if (!isBot && userAgent ~ botRegex)
+			isBot = true
+
+if (isBot())
+	serverRendered = first(nabu.web.map.crud.sitemapEntry.services.list(filter: structure(uri: request.url()))/results)
+	console("Bot detected: " + request.userAgent(), serverRendered)
+	if (serverRendered != null && serverRendered/generated != null)
+		response.target(server.root() + "sitemap-prerendered?id=" + serverRendered/id)
+		

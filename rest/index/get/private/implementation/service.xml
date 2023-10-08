@@ -207,12 +207,12 @@
 				</steps>
 				<steps xsi:type="be.nabu.libs.services.vm.step.Link"
 						disabled="false"
-						id="7ca307e281f6453295d3c1ee2d874ade"
+						id="70272d4fb9c14eacafe9ddbbe164a8c0"
 						mask="false"
 						optional="false"
 						fixedValue="true">
 					<from>=fragment/path + "sitemap/" + sitemap/name + "/entries-" + pageIndex + ".xml"</from>
-					<to>components/fragment</to>
+					<to>components/path</to>
 				</steps>
 			</steps>
 			<steps xsi:type="be.nabu.libs.services.vm.step.Link"

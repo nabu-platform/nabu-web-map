@@ -1,7 +1,30 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<node artifactManager="be.nabu.eai.module.services.vm.VMServiceManager" created="2023-09-29T19:03:26.128+02:00" lastModified="2023-09-29T19:03:26.128+02:00" leaf="true" version="2">
+<node artifactManager="be.nabu.eai.module.services.vm.VMServiceManager" created="2023-09-29T19:03:26.128+02:00" lastModified="2023-10-08T16:25:35.071+02:00" leaf="true" version="26">
     <environmentId>apollo</environmentId>
     <hidden>false</hidden>
     <locked>false</locked>
     <properties/>
+    <references>nabu.web.map.crud.sitemapEntry.services.list</references>
+    <references>nabu.utils.List.add</references>
+    <references>java.util.Date</references>
+    <references>nabu.utils.Date.now</references>
+    <references>nabu.web.map.services.entry.propertyList</references>
+    <references>nabu.utils.reflection.Type.describe</references>
+    <references>nabu.web.map.specs.listEntries</references>
+    <references>nabu.services.jdbc.Services.update</references>
+    <references>nabu.services.jdbc.Services.delete</references>
+    <references>nabu.utils.List.remove</references>
+    <references>nabu.utils.String.replace</references>
+    <references>nabu.utils.Runtime.setServiceContext</references>
+    <references>nabu.web.map.crud.sitemapGenerator.types.output</references>
+    <references>java.lang.Object</references>
+    <references>java.lang.String</references>
+    <references>nabu.web.map.crud.sitemapEntry.types.output</references>
+    <references>java.net.URI</references>
+    <references>nabu.web.map.crud.sitemapGenerator.services.list</references>
+    <references>nabu.data.json.Services.unmarshal</references>
+    <references>nabu.utils.Properties.toObject</references>
+    <references>nabu.web.renderer2.Services.execute</references>
+    <references>nabu.web.map.specs.entry</references>
+    <references>nabu.web.map.crud.sitemapEntry.services.create</references>
 </node>
