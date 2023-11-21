@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<node artifactManager="be.nabu.eai.module.rest.provider.RESTServiceManager" created="2023-10-17T13:47:27.531+02:00" lastModified="2023-10-17T14:22:18.668+02:00" leaf="true" version="21">
+    <environmentId>apollo</environmentId>
+    <hidden>false</hidden>
+    <locked>false</locked>
+    <properties/>
+    <references>java.lang.Long</references>
+    <references>nabu.utils.String.toStream</references>
+    <references>java.lang.Boolean</references>
+    <references>nabu.web.map.crud.sitemapEntry.services.get</references>
+    <references>java.lang.String</references>
+    <references>nabu.web.map.crud.sitemapEntry.types.output</references>
+    <references>nabu.web.map.crud.sitemapEntryRequest.services.create</references>
+    <references>java.io.InputStream</references>
+</node>

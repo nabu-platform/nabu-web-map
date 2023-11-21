@@ -1,0 +1,6 @@
+<structure interface="nabu.web.map.rest.entry.rendered:api" name="pipeline">
+    <structure name="input"/>
+    <structure name="output"/>
+    <structure collectionName="sitemapEntries" definition="nabu.web.map.crud.sitemapEntry.types.output" name="entry"/>
+    <field name="direct" type="java.lang.Boolean"/>
+</structure>

@@ -1,0 +1,9 @@
+parsed = json.objectify(read("https://raw.githubusercontent.com/monperrus/crawler-user-agents/master/crawler-user-agents.json"))
+
+# The patterns are already escaped to be regex compatible
+# They do escape the forward slash as well but does not impact our matching normally
+patterns = parsed/array/pattern
+
+regex = ".*(" + join("|", patterns) + ").*"
+echo("Regex is", regex)
+

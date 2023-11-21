@@ -1,8 +1,0 @@
-@get
-id ?= null
-
-if (id == null)
-	response.code(404)
-	abort()
-	
-response.content(nabu.web.map.crud.sitemapEntry.services.get(id: id)/result/content)

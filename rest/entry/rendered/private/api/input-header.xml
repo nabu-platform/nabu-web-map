@@ -1,0 +1,4 @@
+<structure name="header">
+    <field minOccurs="0" name="originalUri" type="java.lang.String"/>
+    <field minOccurs="0" name="userAgent" type="java.lang.String"/>
+</structure>

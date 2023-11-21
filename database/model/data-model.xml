@@ -18,4 +18,10 @@
         <x>1243</x>
         <y>352</y>
     </entries>
+    <entries>
+        <synchronize>true</synchronize>
+        <type>nabu.web.map.database.types.sitemapEntryRequest</type>
+        <x>525</x>
+        <y>566</y>
+    </entries>
 </dataModel>

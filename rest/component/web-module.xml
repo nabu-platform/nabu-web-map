@@ -2,5 +2,7 @@
 <webModule>
     <webFragments>nabu.web.map.rest.index.get</webFragments>
     <webFragments>nabu.web.map.rest.entry.list</webFragments>
+    <webFragments>nabu.web.map.rest.entry.rendered</webFragments>
+    <webFragments>nabu.web.map.rest.entry.test</webFragments>
     <audience>CUSTOMER</audience>
 </webModule>
