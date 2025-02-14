@@ -109,7 +109,7 @@
 	<steps xsi:type="be.nabu.libs.services.vm.step.For"
 			disabled="false"
 			id="fb91c80619da4455b3d5c8fd596c5545"
-			label="fragment/active"
+			label="fragment"
 			lineNumber="3"
 			variable="sitemap"
 			into="output/entries">

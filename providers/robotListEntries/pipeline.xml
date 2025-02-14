@@ -1,7 +1,7 @@
 <structure interface="nabu.web.robots.specs.listEntries" name="pipeline">
     <structure name="input"/>
     <structure name="output"/>
-    <structure collectionName="sitemapApplications" definition="nabu.web.map.crud.sitemapApplication.types.output" maxOccurs="unbounded" minOccurs="0" name="sitemaps"/>
+    <structure collectionName="sitemapApplications" definition="nabu.web.map.crud.sitemapApplication.types.output" enricher="nabu.web.map.crud.sitemapApplication.services.list" maxOccurs="unbounded" minOccurs="0" name="sitemaps" persister="nabu.web.map.crud.sitemapApplication.batch.updateAll"/>
     <field name="name" type="java.lang.String"/>
     <structure definition="nabu.web.application.types.WebApplicationInformation" minOccurs="0" name="information"/>
     <structure definition="nabu.web.application.types.WebFragmentInformation" minOccurs="0" name="fragment"/>
