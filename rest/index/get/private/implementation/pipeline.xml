@@ -1,7 +1,7 @@
 <structure interface="nabu.web.map.rest.index.get:api" name="pipeline">
     <structure name="input"/>
     <structure name="output"/>
-    <structure collectionName="sitemapApplications" definition="nabu.web.map.crud.sitemapApplication.types.output" minOccurs="0" name="sitemap"/>
+    <structure collectionName="sitemapApplications" definition="nabu.web.map.crud.sitemapApplication.types.output" enricher="nabu.web.map.crud.sitemapApplication.services.list" minOccurs="0" name="sitemap" persister="nabu.web.map.crud.sitemapApplication.batch.updateAll"/>
     <field name="count" type="java.lang.Long"/>
     <structure definition="nabu.web.application.types.WebFragmentInformation" minOccurs="0" name="fragment"/>
     <structure definition="nabu.web.application.types.WebApplicationInformation" minOccurs="0" name="information"/>

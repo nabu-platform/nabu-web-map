@@ -124,7 +124,7 @@
 	<steps xsi:type="be.nabu.libs.services.vm.step.Map"
 			disabled="false"
 			id="8f12105e0a764335ac84140d0dba9976"
-			label="fragment/active"
+			label="fragment"
 			lineNumber="4">
 		<steps xsi:type="be.nabu.libs.services.vm.step.Invoke"
 				disabled="false"
